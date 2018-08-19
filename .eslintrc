@@ -4,5 +4,8 @@
     "plugin:prettier/recommended",
     "eslint:recommended",
     "plugin:react/recommended"
-  ]
+  ],
+  "rules": {
+    "prettier/prettier": "error"
+  }
 }
