@@ -1,7 +1,8 @@
-import React, { Component, Fragment } from "react";
+import React, { Component, Fragment, Context } from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import { Toggle, Portal, Modal } from "./Utilities";
+import { Toggle } from "Utilities";
+import { Modal } from "Elements";
 
 class App extends Component {
   render() {
@@ -11,13 +12,12 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
-
         <Toggle>
           {({ on, toggle }) => (
             <Fragment>
               <button onClick={toggle}>Login</button>
               <Modal on={on} toggle={toggle}>
-                <h1>still in modal</h1>
+                <h1>Have yerself an eggroll</h1>
               </Modal>
             </Fragment>
           )}
@@ -28,7 +28,3 @@ class App extends Component {
 }
 
 export default App;
-
-//   <button onClick={toggle}>Click Me!</button>
-//   {on && <h1>Surprise!</h1>}
-//   <Portal>{on && <h1>I'm in a portal!</h1>}</Portal>

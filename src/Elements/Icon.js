@@ -1,14 +1,14 @@
 /* eslint react/prop-types: 0 */
 
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 export default class Icon extends Component {
   static defaultProps = {
-    color: "black"
+    color: 'black'
   };
   render() {
     switch (this.props.name) {
-      case "close":
+      case 'close':
         return (
           <svg
             x="0px"

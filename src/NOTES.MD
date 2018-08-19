@@ -10,3 +10,10 @@
 
 - allows sending data from one place in the code to another
 - specific example for modals that was hard to get to show up on top in react
+
+## filing system
+
+- create .env file and add NODE_PATH=src
+- create:
+  1. Elements folder - any components that output HTML
+  2. Utilities folder - any Components that just do things (Toggle, Portal)
