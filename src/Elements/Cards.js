@@ -1,15 +1,17 @@
 import styled from 'styled-components';
-import { elevation, transition, lAqua } from 'Utilities';
+import { elevation, transition } from 'Utilities';
 
 export const Card = styled.div`
+  text-align: center;
   background: white;
   border-radius: 5px;
+  width: 320px;
+  margin: 0 auto;
   padding: 15px;
-  color: ${lAqua};
+  color: #777299;
   ${elevation[3]};
   ${transition({
-    ease: 'ease-in',
-    length: '.2s'
+    property: 'box-shadow'
   })};
   &:hover {
     ${elevation[5]};
